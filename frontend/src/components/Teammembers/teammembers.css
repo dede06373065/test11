@@ -1,0 +1,73 @@
+.flip-container {
+    perspective: 1000;
+}
+
+.flip-container:hover .flipper,
+.flip-container.hover .flipper {
+    transform: rotateY(180deg);
+}
+
+.flip-container,
+.front,
+.back {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto;
+}
+
+.flipper {
+    transition: 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.front {
+    z-index: 2;
+}
+
+.back {
+    transform: rotateY(180deg);
+    background-color: aliceblue;
+    border-radius: 100%;
+    padding-top: 10px;
+}
+
+.red {
+    color: red;
+}
+
+.username {
+    padding: 10px;
+    overflow: hidden;
+    font-size: 0.8rem;
+}
+
+.more {
+    display: inline-block;
+    width: 150px;
+    padding: 10px;
+    background-color: rgb(0, 102, 177);
+    border-radius: 3px;
+    border: 2px solid rgb(0, 102, 177);
+    box-shadow: 2px 2px 2px gray;
+    text-decoration: none;
+    color: white;
+}
+
+.more:hover {
+    color: rgb(0, 102, 177);
+    background-color: white;
+}
+
+.pagination{
+    margin-top:50px;
+}
+

@@ -1,0 +1,24 @@
+.description{
+    width: 55%;
+    margin: 0 auto;
+    color: rgb(169,169,169);
+}
+.title{
+    font-size: 2rem;
+    color: rgb(162,162,162);
+    font-weight: 100;
+    margin-top: 0px;
+}
+.firstTitle{
+    font-weight: 100;
+    color: rgb(218,218,218);
+    margin-bottom: 0px;
+}
+@media only screen and (max-width: 480px) {
+    .description{
+        width:75%;
+    }
+    .title{
+        font-size: 1.4rem;
+    }
+}
